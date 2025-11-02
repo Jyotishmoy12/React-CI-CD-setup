@@ -32,7 +32,7 @@ jobs:
       - name: "Run Build"
         run: npm run build
       - name: "Upload production ready build files"
-        uses: actions/upload-artifact@v4
-        with:
+        uses: actions/upload-artifact@v4 # Uploads an artifact from the current job it will help us to access the build files
+        with: # with helps to access the build files
           name: build
-          path: dist
+          path: dist # path of the files
